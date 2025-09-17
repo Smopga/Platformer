@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Level Editor</title>
+  <style>
+    body { margin:0; display:flex; }
+    #sidebar { width:200px; background:#ddd; padding:10px; }
+    canvas { border:1px solid black; }
+  </style>
+</head>
+<body>
+  <div id="sidebar">
+    <button onclick="downloadLevel()">Download Level</button>
+    <input type="file" id="fileInput" />
+  </div>
+  <canvas id="editor" width="800" height="600"></canvas>
+  <script src="editor.js"></script>
+</body>
+</html>
